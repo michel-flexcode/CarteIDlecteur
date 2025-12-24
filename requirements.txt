@@ -1,0 +1,16 @@
+pyscard>=1.9.9
+PyKCS11>=1.6.4
+
+# Note: this file lists Python dependencies for the simple eID reader CLI.
+# Install with: python3 -m pip install -r requirements.txt
+
+
+
+
+
+
+
+pyscard>=1.9.9 # Éviter d’écrire du C, API stable, portable, Accès brut APDU
+PyKCS11>=1.6.4
+
+# Install with: python3 -m pip install -r requirements.txt
