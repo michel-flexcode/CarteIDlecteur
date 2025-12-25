@@ -5,10 +5,21 @@ Ce petit outil permet d'explorer une carte d'identité électronique belge via P
 Installation
 
 1. Assurez-vous que `pcscd` est installé et en cours d'exécution sur votre système.
-2. Installez les dépendances Python:
+2. (Recommandé) Créez et activez un environnement virtuel Python (`venv`) pour isoler les dépendances:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+# Sur Windows PowerShell:
+# .venv\Scripts\Activate.ps1
+# Sur Windows cmd:
+# .venv\Scripts\activate.bat
+```
+
+3. Installez les dépendances Python:
+
+```bash
+pip install -r requirements.txt
 ```
 
 Utilisation
