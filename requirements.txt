@@ -6,3 +6,14 @@ PyKCS11>=1.5.18 # Strictement local ?
 # Auditer 
 # sudo tcpdump -i any
 # strace -f -e trace=network python main.py
+
+####################
+# x86_64-linux-gnu-gcc et x86_64-linux-gnu-g++ manquent → pas de compilateur C/C++
+
+# libpcsclite.pc manquant → libpcsclite-dev non installé
+
+# Sans ces paquets, pip ne peut pas créer les extensions natives nécessaires à pyscard
+
+# > il faut donc ceci 
+# sudo apt update
+# sudo apt install build-essential python3-dev libpcsclite-dev pcscd libccid
