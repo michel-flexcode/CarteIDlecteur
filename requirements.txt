@@ -1,6 +1,6 @@
 pyscard>=1.9.9 # Éviter d’écrire du C, API stable, portable, Accès brut APDU
 PyKCS11>=1.5.18 # Strictement local ?
-
+pyinstaller
 # Install with: python3 -m pip install -r requirements.txt
 
 # Auditer 

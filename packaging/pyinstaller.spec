@@ -3,11 +3,11 @@
 block_cipher = None
 
 a = Analysis(
-    ['app/main.py'],
-    pathex=['.'],
+    ['../app/main.py'],  # script principal
+    pathex=['..'],       # racine du projet
     binaries=[],
     datas=[
-        ('app/*.py', 'app'),
+        ('../app/*.py', 'app'),  # tous les fichiers .py de app/ sont inclus
     ],
     hiddenimports=[
         'smartcard.System',
