@@ -4,9 +4,13 @@ CLI simple pour lire une carte d'identité (Belgique) via PKCS#11 (middleware eI
 """
 
 import argparse
+import sys
 from network_audit import NetworkAudit  # 🔐 audit réseau
 from read_identity import read_eid_identity  # lecture via PKCS#11
+from check_middleware import ensure_eid_middleware
 
+if not ensure_eid_middleware():
+    sys.exit("Le middleware eID est requis pour continuer. Fin du programme.")
 
 def show_identity():
     """Récupère et affiche nom, prénom et date de naissance."""
