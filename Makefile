@@ -2,7 +2,7 @@
 # eID Client - Makefile
 # ===========================
 
-APP_NAME := eid-client
+APP_NAME := CARTEIDLECTEUR
 PREFIX   := /opt/$(APP_NAME)
 BIN      := /usr/local/bin/$(APP_NAME)
 

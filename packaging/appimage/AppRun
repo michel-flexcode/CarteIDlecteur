@@ -11,4 +11,4 @@ if ! pgrep -x pcscd >/dev/null; then
 fi
 
 # lance ton binaire Python (PyInstaller)
-exec "$HERE/bin/eid-client" "$@"
+exec "$HERE/bin/CARTEIDLECTEUR" "$@"

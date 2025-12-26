@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-APP_DIR="/opt/eid-client"
+APP_DIR="/opt/CARTEIDLECTEUR"
 PYTHON="/usr/bin/python3"
 APP="$APP_DIR/app/main.py"
 

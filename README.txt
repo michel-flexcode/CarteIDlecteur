@@ -5,7 +5,7 @@ CARTEIDLECTEUR/
 ├── app/
 │   ├── main.py                 # ton CLI (ou GUI)
 │   ├── network_audit.py        # audit réseau
-│   ├── apdu.py                 # APDU autorisées (whitelist) (les apdu ne sont pas fournies par le gvt belge)
+│   ├── apdu.py                 # APDU autorisées (whitelist) (les apdu ne sont pas fournies par le gvt belge) > libbeidpkcs11.so sait
 │   ├── read_identity.py        # via package ?
 │   └── __init__.py
 │

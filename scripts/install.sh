@@ -9,6 +9,6 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Install the .deb package
-dpkg -i packaging/deb/eid-client.deb || apt -f install -y
+dpkg -i packaging/deb/CARTEIDLECTEUR.deb || apt -f install -y
 
 echo "[+] Installation complete"
