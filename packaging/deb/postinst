@@ -13,6 +13,12 @@ fi
 udevadm control --reload-rules || true
 udevadm trigger || true
 
-# 3. Message final (optionnel)
-echo "[eid-client] Installation terminée."
+# 3. Créer le binaire client
+if [ -d /opt/eid-client ]; then
+    ln -sf /opt/eid-client/scripts/run_safe.sh /usr/local/bin/eid-client
+    chmod +x /opt/eid-client/scripts/run_safe.sh
+fi
+
+# 4. Message final
+echo "[eid-client] Installation terminée. Vous pouvez maintenant lancer 'eid-client'."
 exit 0
