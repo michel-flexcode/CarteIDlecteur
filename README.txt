@@ -5,7 +5,8 @@ CARTEIDLECTEUR/
 ├── app/
 │   ├── main.py                 # ton CLI (ou GUI)
 │   ├── network_audit.py        # audit réseau
-│   ├── apdu.py                 # APDU autorisées (whitelist)
+│   ├── apdu.py                 # APDU autorisées (whitelist) (les apdu ne sont pas fournies par le gvt belge)
+│   ├── read_identity.py        # via package ?
 │   └── __init__.py
 │
 ├── packaging/
