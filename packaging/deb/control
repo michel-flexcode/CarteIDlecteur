@@ -3,6 +3,6 @@ Version: 1.0.0
 Section: utils
 Priority: optional
 Architecture: amd64
-Depends: pcscd, libccid
+Depends: pcscd, libccid, python3
 Maintainer: Michel <michelseocode@gmail.com>
 Description: Application client pour lire les cartes eID belges
