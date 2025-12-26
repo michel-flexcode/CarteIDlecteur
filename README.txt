@@ -34,3 +34,14 @@ eid-client/
 
 
 Penser désinstallation 
+
+
+Penser sécurité et audit
+
+isolation Linux native
+aucune syscall réseau possible
+audit écrit noir sur blanc
+pas de dépendance cloud
+
+Principes 
+SOC,
