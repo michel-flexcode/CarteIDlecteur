@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+echo "[eid-client] Post-installation..."
+
+# 1. Activer et démarrer PC/SC
+if command -v systemctl >/dev/null 2>&1; then
+    systemctl enable pcscd >/dev/null 2>&1 || true
+    systemctl start pcscd >/dev/null 2>&1 || true
+fi
+
+# 2. Recharger les règles udev (lecteur USB)
+udevadm control --reload-rules || true
+udevadm trigger || true
+
+# 3. Message final (optionnel)
+echo "[eid-client] Installation terminée."
+exit 0

@@ -31,3 +31,6 @@ eid-client/
 │
 ├── requirements.txt            # pyscard seulement
 └── Makefile
+
+
+Penser désinstallation 
