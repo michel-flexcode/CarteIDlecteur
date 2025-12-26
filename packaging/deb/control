@@ -1,0 +1,8 @@
+Package: eid-client
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: pcscd, libccid
+Maintainer: Michel <michelseocode@gmail.com>
+Description: Application client pour lire les cartes eID belges
